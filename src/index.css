@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    font-family: Dancing Script;
+    color: white;
+}
+h2 {
+    font-family: Dancing Script;
+}
