@@ -36,9 +36,10 @@ I created a simple meditation site in shades of pink and black with a background
  - REACT
 
 # Credits
-Music: Maksym Dudchyk from Pixabay
-Background: https://yogayurvedaa.com/meditation-top-12-amazing-health-benefits/
-Icon: Google fonts
+
+- Music: Maksym Dudchyk from Pixabay
+- Background: https://yogayurvedaa.com/meditation-top-12-amazing-health-benefits/
+- Icon: Google fonts
 
 # Contact
 Contact me!
