@@ -9,11 +9,6 @@ export default defineConfig({
       '/@public/': path.resolve(__dirname, 'public') + '/',
     },
   },
-  build: {
-    rollupOptions: {
-      external: ['react-router-dom', 'react-audio-player']
-    }
-  },
   optimizeDeps: {
     exclude: ['src/audio/*.mp3']
   }
