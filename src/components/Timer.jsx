@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Audio1 from '/@public/audio/audio1.mp3';
-import Audio2 from '/@public/audio/audio2.mp3';
+import Audio1 from '/audio/audio1.mp3';
+import Audio2 from '/audio/audio2.mp3';
 
 function Timer() {
     const [hours, setHours] = useState(0);
@@ -45,10 +45,17 @@ function Timer() {
 
     const handleStart = () => {
         setIsActive(true);
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
     };
 
     const handlePause = () => {
         setIsActive(false);
+        if (audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
+        }
     };
 
     const handleReset = () => {
