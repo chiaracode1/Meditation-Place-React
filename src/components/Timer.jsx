@@ -43,11 +43,13 @@ function Timer() {
         return () => clearInterval(interval);
     }, [isActive, seconds, minutes, hours, selectedAudio]);
 
-    const handleStart = () => {
+     const handleStart = () => {
+        if (hours !== 0 || minutes !== 0 || seconds !== 0) {
         setIsActive(true);
         if (audioRef.current) {
             audioRef.current.play();
         }
+       }
     };
 
     const handlePause = () => {
